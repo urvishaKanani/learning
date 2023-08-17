@@ -1,0 +1,53 @@
+
+ body{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+} 
+
+#time{
+    text-align: center;
+    margin:10px;
+    padding:10px;
+}
+#btn-container{
+    text-align: center;
+}
+.digit{
+    font-size: 100px;
+    font-weight: 80px;
+    color:white;
+}
+.txt{
+    font-size:30px;
+    font-weight:20px;
+    color:white;
+    margin:5px;
+    padding: 3px;
+}
+#start{
+    background-color: greenyellow;
+    color: white;
+    padding:3px 15px;
+    margin:5px;
+    border: 1px solid greenyellow;
+}
+#stop{
+    background-color: blueviolet;
+    color:white;
+    padding:3px 15px;
+    margin:5px;
+    border: 1px solid blueviolet;
+}
+#reset{
+    background-color: brown;
+    color:white;
+    padding:3px 15px;
+    margin:5px;
+    border: 1px solid brown;
+}
+.btn{
+    cursor: pointer;
+}
