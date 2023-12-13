@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+     <div class="Page">
+        <input name="LinkID" type="hidden" id="LinkID" value="566a6a9e-0bfa-4bf3-a20f-1da579be3fd1">
+        <input name="xi_preview" type="hidden" id="xi_preview">
+        
+        <table id="tableLogos" width="100%">
+           <tbody>
+              <tr>
+                 <td align="left"></td>
+                 <td align="right"><img id="imgAnetLogo" src="https://simplecheckout.authorize.net/payment/content/SecureCheckout.gif" alt="Authorize.Net Secure Checkout" style="height:45px;width:136px;border-width:0px;"></td>
+              </tr>
+           </tbody>
+        </table>
+
+        <p></p>
+
+        <table class="SectionHeadingBorder" id="tableOrderInformation" width="100%">
+           <tbody>
+               <tr>
+                 <td class="Label" align="left">Order Information</td>
+                 <td align="right">* Required Fields</td>
+               </tr>
+           </tbody>
+        </table>
+
+        <hr>
+
+        <div style="margin-top:10px; margin-bottom:10px;"></div>
+
+        <div id="divQuantityVal">
+          <span id="valQuantityRequired" class="Validator" style="color:Red;display:none;">
+           Please enter a valid quantity for this item.
+          </span>
+          <span id="valQuantity" class="Validator" style="color:Red;display:none;">Please enter a valid quantity for this item between 1 and 100. Please do not use commas or decimals.</span>
+        </div>
+
+        <table id="tableLineItems" width="100%" style="margin-top:8px;">
+            <tbody>
+               <tr>
+                  <td align="left" class="LeftCol"><span class="Label">Item</span></td>
+                  <td align="left"><span class="Label">Description</span></td>
+                  <td align="left" style="width:55px;"><span class="Label">Qty</span></td>
+                  <td align="right"><span class="Label">Unit&nbsp;Price</span></td>
+               </tr>
+               <tr>
+                  <td align="left"><span id="spnItemID" class="Value">1</span></td>
+                  <td align="left"><span id="spnItemName" class="Value">CASE</span></td>
+                  <td align="left">
+                    <span id="spnQuantity">
+                    <input name="txtQuantity" type="text" value="1" maxlength="10" id="txtQuantity" onblur="UpdatePrices()" onchange="UpdatePrices()" autocomplete="off" style="width:40px;" fdprocessedid="7eqxt">*
+                    </span>
+                  </td>
+                  <td align="right"><span id="spnItemPrice" class="Value">US&nbsp;$164.00</span></td>
+               </tr>
+               <tr>
+                    <td align="left">&nbsp;</td>
+                    <td align="left"><span id="spnItemDescription" class="Value">100% FRUIT JUICE CONCENTRATE 1+7</span></td>
+                    <td align="right">&nbsp;</td>
+                    <td align="right">&nbsp;</td>
+              </tr>
+           </tbody>
+        </table>
+
+        <hr style="margin-top:16px;">
+
+        <table width="100%">
+            <tbody>
+                <tr>
+                  <td class="LeftCol">&nbsp;</td>
+                  <td align="right">
+                    <table>
+                      <tbody>
+                        <tr id="trTotalPrice" valign="baseline">
+                           <td><span class="Total">Total:</span></td>
+                           <td>&nbsp;</td>
+                           <td align="right" class="Total">&nbsp;<span id="spnTotalPrice" class="Total">US&nbsp;$164.00<span class="Dagger">†</span></span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div>
+                          <span id="spnDynPriceNoteQty" class="Explain">† Price depends on the number of items purchased.</span>
+                    </div>
+
+                  </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="divCaptcha">
+           <table class="SectionHeadingBorder" width="100%">
+                <tbody>
+                    <tr>
+                       <td class="Label" align="left">Security Code</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <table>
+                  <tbody>
+                    <tr>
+                       <td class="LeftCol">&nbsp;</td>
+                       <td>
+                          <div>
+
+                              <img src="https://captcha.authorize.net:443/Captcha/Captcha.aspx?ACR=2&amp;CID=5489082&amp;getImage=1&amp;imageType=jpeg" id="imgCaptcha" width="250" height="50" alt="Security Code">
+
+                               <a href="https://captcha.authorize.net:443/Captcha/Captcha.aspx?ACR=2&amp;CID=5489082&amp;getSound=1" id="lnkCaptchaAudio"><img src="https://simplecheckout.authorize.net/payment/content/speaker.gif" border="0" width="22" height="22" alt="Security Code Audio"></a>
+                         </div>
+
+                         <div style="margin-top:2px; margin-bottom:3px;">Please enter the security code above.</div>
+                         <div>
+                             <input name="x_captcha" type="text" id="x_captcha" maxlength="5" size="6" autocomplete="off" fdprocessedid="zslj9a"> *
+                             <span id="valCaptchaRequired" class="Validator" style="color:Red;display:none;">
+                             Please enter the security code displayed above.
+                             </span>
+                             <span id="valCaptcha" class="Validator" style="color:Red;display:none;">
+                             Please enter the security code displayed above.
+                             </span>
+                         </div>
+                       </td>
+                    </tr>
+                  </tbody>
+                </table>
+        </div>
+
+        <br>
+
+        <hr style="margin-top:0px;">
+
+        <div style="margin-top:16px; margin-bottom:16px; margin-left:10px">
+               <span id="spnVerifiedMerchantImg" style="margin-right:120px;">
+                <a id="lnkVerifiedMerchant" target="_blank" rel="noopener noreferrer"></a>
+                 &nbsp;
+               </span>
+               <input type="submit" name="btnForm1Submit" value="Continue" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnForm1Submit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnForm1Submit" fdprocessedid="0y99y">
+        </div>
+
+        <hr>
+
+        <input name="DummyTextBox" type="text" id="DummyTextBox" style="visibility:hidden;display:none;">
+
+        <script type="text/javascript" language="javascript">
+        </script>
+
+     </div>
+    </center>
+    
+</body>
+</html>

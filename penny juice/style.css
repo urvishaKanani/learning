@@ -1,0 +1,185 @@
+.container{
+    height:100%;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Press Start 2P', cursive;
+    color:brown;
+}
+ul{
+    
+    margin-left: 300px;
+}
+ul li{
+    margin:10px;
+    font-size: large;
+}
+.nav-link{
+    color:red;
+}
+.display-4{
+    color:darkslategray;
+    padding-top:30px;
+    margin-top:30px;
+}
+.btn-danger{
+    margin-bottom:18px;
+    background-color: brown;
+    color:white;
+}
+.bi{    
+   margin:5px;
+}
+.bi-facebook{
+     color: black;
+}
+.bi-twitter{
+    color: black;
+}
+.bi-instagram{
+    color: black;
+}
+footer{
+    background-color: brown;
+    padding:10px;
+    text-align: right;
+}
+.image{
+    margin-top: -40px;
+}
+.image1{
+    margin-top:50px;
+}
+.para{
+    margin-top: 40px;
+}
+.style{
+    font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+}
+.form-label{
+    font-weight: bold;
+}
+.our{
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+.btn1{
+    margin-top:50px;
+    padding:10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.home{
+    padding-top:20px;
+     padding-bottom: 40px; 
+}
+.d-flex{
+    padding-top:140px;
+     padding-bottom: 100px; 
+} 
+.nutrition{
+    padding-top:140px;
+    padding-bottom: 100px;
+}
+.juice{
+    padding-top:160px;
+    padding-bottom: 100px;
+    
+}
+.contact{
+    padding-top:180px;
+    padding-bottom: 100px;
+}
+.bg-img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-image: url('images/65\ Fruit\ Background\ Wallpapers\ on\ WallpaperPlay.jpg') !important;
+    background-size: cover !important;
+    background-color: rgba(255, 255, 7, 1) !important;
+    background-attachment: fixed;
+    padding-top: 400px;
+   
+    
+}
+.learn{
+    padding-top:20px;
+    background-color: rgb(247, 247, 138);
+}
+.red{
+    background-color: red;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    height:10%;
+    width:100%;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.simple{
+    border:solid red;
+    font-weight: bold;
+    height:10%;
+    width:100%;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.red p a{
+    color:white;
+}
+.ul{
+    margin-left:0px;
+}
+form{
+    padding-bottom: 70px;
+    padding-top:30px;
+}
+
+.form-control{
+    background-color: rgb(232, 227, 221);
+}
+.btn2{
+    margin-top:50px;
+    padding:10px;
+    border-radius: 5px;
+    text-decoration: none;
+    float: inline-end;
+   
+    
+} 
+.buy-now{
+    text-align: center;
+    margin-top:150px;
+}
+.bottom{
+    text-align: center;
+    font-weight: bold;
+    margin-top:70px;
+}
+.credit{
+    margin-bottom: 20px;
+}
+.error{
+    color:red;
+    text-align: center;
+}
+
+
+center {
+    display: block;
+    text-align: -webkit-center;
+}
+/* TD, DIV, SPAN, BODY, P {
+    font-size: 12px;
+}
+BODY {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, Sans-Serif;
+    overflow: auto;
+} */
+
+
