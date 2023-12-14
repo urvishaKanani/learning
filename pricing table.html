@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing table project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .container-md{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            height: 100vh;
+            
+            
+
+        }
+        .part1{
+            background-color:antiquewhite;
+            text-align: center;
+            padding:5px 15px;
+            flex: 1;
+            border-radius: 5px;
+           
+        }
+        .head{
+            
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .heading{
+            margin-bottom: 0px;
+            font-weight: bold;
+            
+        }
+        .list{
+           padding: 0px;
+           margin: 0px;
+           margin-top: 5px;
+
+        }
+        .list li{
+            font-size: 8px;
+            list-style: none;
+            margin-bottom: 5px;
+           
+            
+           
+        }
+        
+        .btn{
+           border-radius: 5px;
+           background-color: brown;
+           color: white;
+           padding:3px;
+           font-size: 8px;
+           border: none;
+           
+        }
+       
+        @media (max-width:576px){
+            .container-md{
+                height:100%;
+                flex-direction: column;
+            }
+        } 
+
+    </style>
+</head>
+<body>
+
+    <div class="container-md">
+        <div class="part1">
+            <div class="head">Basic</div>
+            <div class="heading">$11.99/month</div>
+            <ul class="list">
+                <li>✅ 10GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 Support</li>
+            </ul>
+            <button class="btn">Sign Up</button>
+        </div>
+
+        <div class="part1">
+            <div class="head">Standard</div>
+            <div class="heading">$19.99/month</div>
+            <ul class="list">
+                <li>✅ 50GB Storage</li>
+                <li>✅ 5 User</li>
+                <li>✅ Phone &amp; Email Support</li>
+            </ul>
+            <button class="btn">Sign Up</button>
+        </div>
+
+        <div class="part1">
+            <div class="head">Standard</div>
+            <div class="heading">$19.99/month</div>
+            <ul class="list">
+                <li>✅ 100GB Storage</li>
+                <li>✅ 10 User</li>
+                <li>✅ 24/7 Support</li>
+            </ul>
+            <button class="btn">Sign Up</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>

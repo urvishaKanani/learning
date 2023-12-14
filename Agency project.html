@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency project</title>
+    <style>
+        body{
+           
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        h1{
+            font-size: 35px;
+
+        }
+        footer{
+            text-align: right;
+            color: blue;
+        }
+        .title-image{
+            height:100px;
+            float:left;
+            margin-right: 15px;
+
+        }
+        .left-card{
+            width:45%;
+            float: left;
+        }
+
+        .right-card{
+            width:45%;
+            float: right;
+        }
+        
+        .creative{
+            color:cornflowerblue;
+        }
+        .logo{
+            width:100px;
+        }
+        h2{
+            font-size: 10px;
+            
+        }
+        .card-text{
+            font-size: 8px;
+        }
+
+        @media (max-width:612px){
+            div{
+               flex-direction: column;
+               height: 100%;
+            }
+        }
+        
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+    
+        
+        <img class="logo" src="logo/logo.png" alt="logo" >
+           
+        <h1>We are a <span class="creative">Creative</span> <br>
+            Design Agency
+        </h1>
+
+        
+
+        <div class="left-card">
+            <img class="title-image" src="images copy/beautiful.jpg" alt="" >
+            <h2 class="card-title">Beauty</h4>
+            <p class="card-text">We strive to create the most beautiful websites for all your needs. Working closely with you to design and develop an amazing website for your business.</p>
+        </div> 
+        <div class="right-card">
+            <img class="title-image" src="images copy/construction.jpg" alt="" >
+            <h2 class="card-title">Construction</h4>
+            <p class="card-text">Built by our team of professional developers, we ensure the most rigourous and modern  website. Built from scratch using HTML and CSS. only the best for you.</p>
+        </div>
+
+    </div>  
+        <footer>
+            <p>Create.Develop.Design.</p>
+        </footer>
+
+
+    
+    
+</body>
+</html>

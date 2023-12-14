@@ -1,0 +1,13 @@
+.container{
+    font-size:10px;
+}
+.row{
+    flex-wrap: nowrap;
+}
+@media (max-size:991px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}

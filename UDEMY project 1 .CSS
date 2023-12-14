@@ -1,0 +1,25 @@
+#container{
+    background-color: blue;
+    padding:15px 10px;
+    border: solid black;
+    border-width: 15px;
+    
+}
+.class2{
+    background-color: brown;
+    padding:10px ;
+    margin:5px 5px;
+    color:white;
+    
+}
+.class1{
+    color:white;
+    padding-left: 8px;
+    margin:0px;
+}
+.class3{
+    color:white;
+    padding-left: 8px;
+    margin-top:50px;
+    margin-bottom: 0px;
+}

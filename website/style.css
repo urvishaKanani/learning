@@ -1,0 +1,29 @@
+
+/* group combinator selector */
+h1 , h2{
+    color:blueviolet;
+}
+
+
+/* direct child combinator selector */
+.box > p{
+    color:firebrick;
+}
+
+
+/* descendant combinator selector (child at any stage) */
+.box li{
+    color:blue;
+}
+
+
+/* chaining combinator selector */
+li.done{
+    color:seagreen;
+}
+
+
+/* combaining combinar selector */
+ul p.done{
+    font-size:0.5rem;
+}
